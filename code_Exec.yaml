@@ -4,7 +4,7 @@
     tasks:
 
     - name: "just execute a ls -lrt command"
-      shell: "whoami"
+      shell: "pwd"
       register: "output"
 
     - debug: var=output.stdout_lines
