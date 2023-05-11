@@ -1,12 +1,10 @@
 ---
-- name: Shell module example
-  host: localhost
-  tasks:
-  
-  - name: Check system information
-    shell:
-    	"lsb_release -a"
-    register: os_info
-    
-  - debug:
-    	msg: ""
+  - name: "Playing with Ansible and Git"
+    hosts: localhost
+    tasks:
+
+    - name: "just execute a ls -lrt command"
+      shell: "lsb_release -a"
+      register: "output"
+
+    - debug: var=output.stdout_lines
