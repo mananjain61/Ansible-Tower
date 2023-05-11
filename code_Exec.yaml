@@ -1,6 +1,6 @@
 ---
 - name: Shell module example
-  hsots: webservers
+  host: localhost
   tasks:
   
   - name: Check system information
