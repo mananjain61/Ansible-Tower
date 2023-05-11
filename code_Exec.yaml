@@ -4,7 +4,7 @@
     tasks:
 
     - name: "just execute a ls -lrt command"
-      shell: "pwd"
+      shell: "touch /home/ubuntu/abc.txt"
       register: "output"
 
     - debug: var=output.stdout_lines
