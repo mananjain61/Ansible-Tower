@@ -1,9 +1,9 @@
 ---
-  - name: "Playing with Ansible and Git"
-    hosts: localhost
+  - name: "Lets play"
+    hosts: 192.168.1.9
     tasks:
 
-    - name: "just execute a ls -lrt command"
+    - name: "Execute Comamand on node"
       shell: "whoami;pwd"
       register: "output"
 
