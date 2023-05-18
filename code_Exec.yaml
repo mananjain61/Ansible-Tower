@@ -1,6 +1,6 @@
 ---
   - name: "Lets play"
-    hosts: 192.168.1.5
+    hosts: 192.168.1.8
     tasks:
 
     - name: "Execute Comamand on node"
