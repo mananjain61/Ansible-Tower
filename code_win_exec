@@ -1,7 +1,10 @@
-- name: Execute command on Windows host
-  hosts: 192.168.1.6
-  tasks:
-    - name: Run whoami command
-      win_shell: whoami
+---
+  - name: "Lets play"
+    hosts: 192.168.1.
+    tasks:
+
+    - name: "Execute Comamand on node"
+      win_shell: "whoami;hostname"
       register: "output"
+
     - debug: var=output.stdout_lines
