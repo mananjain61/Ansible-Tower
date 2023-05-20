@@ -1,0 +1,7 @@
+- name: Execute command on Windows host
+  hosts: 192.168.1.6
+  tasks:
+    - name: Run whoami command
+      win_shell: whoami
+      register: "output"
+    - debug: var=output.stdout_lines
